@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; script-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'none';" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+  <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+  <title>Projects — Ahmad Adil</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page-wrapper" id="top">
+
+    <!-- HEADER -->
+    <header class="site-header">
+      <a href="index.html" class="site-header-logo">Ahmad Adil</a>
+      <nav class="nav-inner">
+        <a href="summary.html" class="nav-link">Summary</a>
+        <div class="nav-divider"></div>
+        <a href="projects.html" class="nav-link nav-link--active">Projects</a>
+        <div class="nav-divider"></div>
+        <a href="honours.html" class="nav-link">Honours &amp; Awards</a>
+        <div class="nav-divider"></div>
+        <a href="volunteering.html" class="nav-link">Volunteering</a>
+        <div class="nav-divider"></div>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <div class="nav-divider"></div>
+        <a href="https://grabcad.com/ahmad.adil-2" target="_blank" rel="noopener noreferrer" class="nav-link nav-link--cta">3D CAD Portfolio</a>
+      </nav>
+    </header>
+
+    <div class="canvas">
+
+      <!-- PAGE HEADER -->
+      <section class="page-header page-header--bg" style="background-image: url('assets/brabcad.png');">
+        <h1 class="heading-hero">Projects</h1>
+        <p class="hero-sub" style="text-align:left;">Some of my most significant projects to date, which have allowed me to develop a breadth of technical and soft skills. Check them out!</p>
+      </section>
+
+      <div class="section-divider"></div>
+
+      <!-- FILTER TABS -->
+      <div class="project-filter">
+        <button class="filter-btn filter-btn--active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="thesis">Final Year / Thesis</button>
+        <button class="filter-btn" data-filter="academic">Academic</button>
+        <button class="filter-btn" data-filter="extracurricular">Extracurricular</button>
+      </div>
+
+      <!-- PROJECTS -->
+      <section class="projects-section">
+
+        <!-- 1: FEA Thesis -->
+        <article class="project-card" data-category="thesis">
+          <div class="project-media project-media--contain">
+            <div class="carousel-slide">
+              <img src="assets/FEA Thesis/roi pic salling.png" alt="Composite Microstructure" />
+            </div>
+            <div class="carousel-slide">
+              <img src="assets/FEA Thesis/Screenshot 2026-05-20 155409.png" alt="FEA Simulation" />
+            </div>
+            <div class="carousel-slide">
+              <img src="assets/FEA Thesis/Screenshot 2026-05-20 155434.png" alt="FEA Results" />
+            </div>
+            <div class="carousel-slide">
+              <img src="assets/FEA Thesis/Screenshot 2026-05-20 155502.png" alt="FEA Analysis" />
+            </div>
+          </div>
+          <div class="project-info">
+            <p class="project-date">Sep 2025 – Present</p>
+            <div class="project-header-row">
+              <div class="project-org-logo" title="Imperial College London">
+                <img src="assets/imperiallogo.png" alt="Imperial College London" />
+              </div>
+              <h3 class="project-title">Finite Element Simulations of Real Composite Microstructures Under Longitudinal Compression</h3>
+            </div>
+            <ul class="project-bullets">
+              <li>Conducting MSc thesis research on the compressive failure behaviour of fibre-reinforced composites, using finite element analysis of real microstructural geometries.</li>
+              <li>Processing micro-CT scan data from composite specimens to extract representative volume elements (RVEs) as FE model inputs.</li>
+              <li>Building and running Abaqus simulations to capture fibre kinking, matrix cracking, and interface debonding under longitudinal compressive loading.</li>
+              <li>Comparing simulation results against experimental data to validate model accuracy and identify failure initiation sites.</li>
+            </ul>
+            <div class="tag-list">
+              <span class="tag">Abaqus</span>
+              <span class="tag">MATLAB</span>
+              <span class="tag">Composite Materials</span>
+            </div>
+          </div>
+        </article>
+
+        <div class="project-divider"></div>
+
+        <!-- Gearbox: ends Apr 2026 -->
+        <article class="project-card" data-category="academic">
+          <div class="project-media project-media--contain">
+            <div class="carousel-slide">
+              <img src="assets/Gearbox/Screenshot 2026-05-18 193938.png" alt="Gearbox Design" />
+            </div>
+            <div class="carousel-slide">
+              <img src="assets/Gearbox/Screenshot 2026-05-18 194030.png" alt="Gearbox Design" />
+            </div>
+            <div class="carousel-slide">
+              <img src="assets/Gearbox/Screenshot 2026-05-18 194107.png" alt="Gearbox Design" />
+            </div>
+            <div class="carousel-slide">
+              <img src="assets/Gearbox/Screenshot 2026-05-18 194140.png" alt="Gearbox Design" />
+            </div>
+          </div>
+          <div class="project-info">
+            <p class="project-date">Sep 2025 – Apr 2026</p>
+            <div class="project-header-row">
+              <div class="project-org-logo" title="Imperial College London">
+                <img src="assets/imperiallogo.png" alt="Imperial College London" />
+              </div>
+              <h3 class="project-title">12-Speed Heavy-Duty Truck Gearbox Design</h3>
+            </div>
+            <ul class="project-bullets">
+              <li>Designed a 12-speed forward, 3-speed reverse gearbox for a 40-tonne commercial truck, rated at 2100 Nm input torque, 2200 RPM, and a 750,000-mile warranty life.</li>
+              <li>Developed a 2×3×2 twin-countershaft architecture — front splitter, main box, and rear range group — to optimise shaft loading and bearing life within mass and cost constraints.</li>
+              <li>Sized gear pairs, shafts, and bearings through static calculations in Excel, achieving critical speed margins of at least 4× and bearing selections rated for 10⁹ cycles at 99% reliability.</li>
+              <li>Delivered a complete gearbox design within client constraints of 484 kg total mass and £10,000 manufacturing cost.</li>
+            </ul>
+            <div class="tag-list">
+              <span class="tag">MATLAB</span>
+              <span class="tag">Microsoft Excel</span>
+              <span class="tag">Abaqus</span>
+            </div>
+          </div>
+        </article>
+
+        <div class="project-divider"></div>
+
+        <!-- CFD Ahmed Body: ends Mar 2026 -->
+        <article class="project-card" data-category="academic">
+          <div class="project-media project-media--contain">
+            <div class="carousel-slide">
+              <img src="assets/CFD Ahmed Body/213sad.png" alt="CFD Ahmed Body" />
+            </div>
+            <div class="carousel-slide">
+              <img src="assets/CFD Ahmed Body/324adsds.png" alt="CFD Ahmed Body" />
+            </div>
+            <div class="carousel-slide">
+              <img src="assets/CFD Ahmed Body/qedasd.png" alt="CFD Ahmed Body" />
+            </div>
+            <div class="carousel-slide">
+              <img src="assets/CFD Ahmed Body/21312sadasd.png" alt="CFD Ahmed Body" />
+            </div>
+            <div class="carousel-slide">
+              <img src="assets/CFD Ahmed Body/sadasdsadsad.png" alt="CFD Ahmed Body" />
+            </div>
+          </div>
+          <div class="project-info">
+            <p class="project-date">Jan 2026 – Mar 2026</p>
+            <div class="project-header-row">
+              <div class="project-org-logo" title="Imperial College London">
+                <img src="assets/imperiallogo.png" alt="Imperial College London" />
+              </div>
+              <h3 class="project-title">Analysis of Wake Characteristics and Aerodynamic Performance of the Ahmed Body</h3>
+            </div>
+            <ul class="project-bullets">
+              <li>Simulated turbulent airflow around an Ahmed body using STAR-CCM+, systematically comparing 5 turbulence models including k-ε, k-ω SST, and Reynolds Stress Model across multiple wall treatments.</li>
+              <li>Conducted a mesh independence study up to 2 million cells, selecting a polyhedral mesh after identifying convergence failures with structured hexahedral meshes.</li>
+              <li>Identified k-ω SST with low y+ wall treatment as the most accurate model, achieving the closest agreement with published experimental velocity and turbulent kinetic energy profiles.</li>
+              <li>Investigated the effect of rear slant angle (25, 30, 35 degrees) and free-stream velocity (8.5 to 50 m/s) on drag and lift coefficients, with results consistent with published vehicle aerodynamic data.</li>
+              <li>Wake features and velocity profiles were in excellent agreement with the seminal paper on Ahmed body wake characteristics.</li>
+            </ul>
+            <div class="tag-list">
+              <span class="tag">StarCCM+</span>
+              <span class="tag">CFD</span>
+            </div>
+          </div>
+        </article>
+
+        <div class="project-divider"></div>
+
+        <!-- Brass Pulley: ends Jan 2026 -->
+        <article class="project-card" data-category="academic">
+          <div class="project-media project-media--contain">
+            <div class="carousel-slide">
+              <img src="assets/Brass Pulley/dim drawing of pb.png" alt="Brass Pulley Drawing" />
+            </div>
+            <div class="carousel-slide">
+              <img src="assets/Brass Pulley/pb1.png" alt="Brass Pulley Block" />
+            </div>
+            <div class="carousel-slide">
+              <img src="assets/Brass Pulley/pb cam path.png" alt="Brass Pulley CAM Path" />
+            </div>
+            <div class="carousel-slide">
+              <img src="assets/Brass Pulley/pb cam 1.png" alt="Brass Pulley CAM" />
+            </div>
+          </div>
+          <div class="project-info">
+            <p class="project-date">Sep 2025 – Jan 2026</p>
+            <div class="project-header-row">
+              <div class="project-org-logo" title="Imperial College London">
+                <img src="assets/imperiallogo.png" alt="Imperial College London" />
+              </div>
+              <h3 class="project-title">Manufacturing Process Design — Brass Pulley Block</h3>
+            </div>
+            <ul class="project-bullets">
+              <li>Redesigned a legacy brass casting into a CNC-machinable form and defined the full manufacturing process for 600 parts per year.</li>
+              <li>Programmed the full machining sequence in SolidWorks CAM, selecting Haas machine tools and Sandvik Coromant tooling to suit material and process requirements.</li>
+              <li>Produced full manufacturing documentation — CNC setting sheets, a production plan, and a Bill of Materials — to support controlled manufacture.</li>
+              <li>Costed the process using a finite capacity model covering machine depreciation, labour, space, power, and consumables.</li>
+            </ul>
+            <div class="tag-list">
+              <span class="tag">SolidWorks CAD</span>
+              <span class="tag">SolidWorks CAM</span>
+              <span class="tag">Microsoft Excel</span>
+              <span class="tag">Process Planning</span>
+              <span class="tag">Cutting Tool Selection and Calculations</span>
+            </div>
+          </div>
+        </article>
+
+        <div class="project-divider"></div>
+
+        <!-- Steering Wheel: ends Nov 2025 -->
+        <article class="project-card" data-category="extracurricular">
+          <div class="project-media project-media--contain">
+            <div class="carousel-slide">
+              <img src="assets/Formula Racing/Screenshot 2026-05-20 172101.png" alt="Steering Wheel Design" />
+            </div>
+            <div class="carousel-slide">
+              <img src="assets/Formula Racing/Screenshot 2026-05-20 172127.png" alt="Steering Wheel Analysis" />
+            </div>
+            <div class="carousel-slide">
+              <img src="assets/Formula Racing/Screenshot 2026-05-20 172852.png" alt="Steering Wheel FEA" />
+            </div>
+            <div class="carousel-slide">
+              <img src="assets/Formula Racing/wheel.png" alt="Ergonomic Steering Wheel" />
+            </div>
+          </div>
+          <div class="project-info">
+            <p class="project-date">Oct 2025 – Nov 2025</p>
+            <div class="project-header-row">
+              <div class="project-org-logo" title="Imperial Formula Racing">
+                <img src="assets/IFR Logo - Copy.png" alt="Imperial Formula Racing" />
+              </div>
+              <h3 class="project-title">Design, Optimisation, and Manufacturing of an Ergonomic Steering Wheel</h3>
+            </div>
+            <ul class="project-bullets">
+              <li>Redesigned the steering wheel in SolidWorks through iterative material removal guided by stress concentration analysis, achieving an 18% weight reduction while meeting structural targets.</li>
+              <li>Produced manufacturing drawings for 3 components and supported fabrication using waterjet cutting and FDM 3D printing in coordination with the workshop team.</li>
+            </ul>
+            <div class="tag-list">
+              <span class="tag">SolidWorks CAD</span>
+              <span class="tag">ANSYS FEA</span>
+              <span class="tag">Manufacturing Drawings</span>
+              <span class="tag">CNC Waterjet Cutting</span>
+              <span class="tag">FDM 3D Printing</span>
+            </div>
+          </div>
+        </article>
+
+        <div class="project-divider"></div>
+
+        <!-- Heat Exchanger: ends Feb 2025 -->
+        <article class="project-card" data-category="academic">
+          <div class="project-media project-media--contain">
+            <div class="carousel-slide">
+              <img src="assets/Heat Exchanger/Untitled Project.jpg" alt="E110 Heat Exchanger Assembly" />
+            </div>
+            <div class="carousel-slide">
+              <img src="assets/Heat Exchanger/E110_Renders 4.jpg" alt="E110 Heat Exchanger Render 4" />
+            </div>
+            <div class="carousel-slide">
+              <img src="assets/Heat Exchanger/E110_Renders 2.jpg" alt="E110 Heat Exchanger Render 2" />
+            </div>
+            <div class="carousel-slide">
+              <img src="assets/Heat Exchanger/E110_Renders.jpg" alt="E110 Heat Exchanger Render" />
+            </div>
+          </div>
+          <div class="project-info">
+            <p class="project-date">Jan 2025 – Feb 2025</p>
+            <div class="project-header-row">
+              <div class="project-org-logo" title="Fatima Fertilizer Company">
+                <img src="assets/ffl logo.png" alt="Fatima Fertilizer Company" />
+              </div>
+              <h3 class="project-title">Shell &amp; Tube Heat Exchanger — Full Assembly Reverse Engineering</h3>
+            </div>
+            <ul class="project-bullets">
+              <li>Reverse-engineered a TEMA shell-and-tube heat exchanger from OEM general assembly drawings, building a detailed 600+ component SolidWorks assembly with all threads and assembly interfaces captured.</li>
+              <li>Generated photorealistic renders using SolidWorks Visualize to communicate planned design modifications to stakeholders and support approval for upgrade work.</li>
+              <li>Presented proposed modifications at an interdepartmental meeting, gathering cross-functional comments to inform the final upgrade decision.</li>
+            </ul>
+            <div class="tag-list">
+              <span class="tag">SolidWorks CAD</span>
+              <span class="tag">SolidWorks Visualize</span>
+            </div>
+          </div>
+        </article>
+
+        <div class="project-divider"></div>
+
+        <!-- Turbojet: ends Jul 2024 -->
+        <article class="project-card" data-category="extracurricular">
+          <div class="project-media">
+            <div class="carousel-slide">
+              <img src="assets/Turbojet Engine/jetengine iso.jpg" alt="Turbojet Engine" />
+            </div>
+            <div class="carousel-slide">
+              <img src="assets/Turbojet Engine/jet engine iso reverse.jpg" alt="Turbojet Engine Reverse" />
+            </div>
+            <div class="carousel-slide">
+              <img src="assets/Turbojet Engine/Sectioned Assy.jpg" alt="Turbojet Engine Sectioned" />
+            </div>
+            <div class="carousel-slide">
+              <img src="assets/Turbojet Engine/Exhaust Assy Iso.jpg" alt="Turbojet Exhaust Assembly" />
+            </div>
+          </div>
+          <div class="project-info">
+            <p class="project-date">Jun 2024 – Jul 2024</p>
+            <div class="project-header-row">
+              <div class="project-org-logo" title="SolidWorks">
+                <img src="assets/sw logo old.png" alt="SolidWorks" style="filter: brightness(1.8); padding: 0;" />
+              </div>
+              <h3 class="project-title">Turbojet Engine — 700+ Component CAD Assembly</h3>
+            </div>
+            <ul class="project-bullets">
+              <li>Modelled and assembled a 700+ component turbojet engine from scratch in SolidWorks, focusing on component fits, interfaces, and overall mechanical layout.</li>
+              <li>Managed assembly complexity through sub-assemblies, CAD mates, and performance optimisation settings, modelling multiple exhaust nozzle configurations.</li>
+              <li>Produced photorealistic renders using SolidWorks Visualize to communicate the design.</li>
+            </ul>
+            <div class="tag-list">
+              <span class="tag">SolidWorks CAD</span>
+              <span class="tag">SolidWorks Visualize</span>
+            </div>
+          </div>
+        </article>
+
+        <div class="project-divider"></div>
+
+        <!-- Bionic Prosthesis: ends Jun 2024 -->
+        <article class="project-card" data-category="thesis">
+          <div class="project-media project-media--contain">
+            <div class="carousel-slide">
+              <img src="assets/Bionic Prosthesis/labelled iso.png" alt="Bionic Prosthesis" />
+            </div>
+            <div class="carousel-slide">
+              <img src="assets/Bionic Prosthesis/fea bionic.png" alt="FEA Analysis" />
+            </div>
+            <div class="carousel-slide">
+              <img src="assets/Bionic Prosthesis/drawing sample proto.png" alt="Manufacturing Drawing" />
+            </div>
+            <div class="carousel-slide">
+              <img src="assets/Bionic Prosthesis/mfged_proto-removebg-preview.png" alt="Manufactured Prototype" />
+            </div>
+            <div class="carousel-slide">
+              <img src="assets/Bionic Prosthesis/gait data.png" alt="Gait Data" />
+            </div>
+          </div>
+          <div class="project-info">
+            <p class="project-date">Sep 2023 – Jun 2024</p>
+            <div class="project-header-row">
+              <div class="project-org-logo" title="GIK Institute">
+                <img src="assets/giki logo.png" alt="GIK Institute" />
+              </div>
+              <h3 class="project-title">2-DOF Bionic Ankle-Foot Prosthesis</h3>
+            </div>
+            <ul class="project-bullets">
+              <li>Designed a 2-DOF bionic ankle-foot prosthesis as a group senior year project, awarded 1<sup>st</sup> place in the faculty.</li>
+              <li>Applied first-principles beam bending analysis and Ashby chart material selection to identify PETG as the optimal material based on specific strength, chemical resistance, and cost.</li>
+              <li>Produced SolidWorks CAD models and manufacturing drawings, iterating through 4 design cycles to resolve structural, actuation, and joint clearance issues.</li>
+              <li>Verified structural integrity via static and dynamic structural analysis, achieving a safety factor of 2.5.</li>
+              <li>Fabricated the prototype in PETG via FDM 3D printing, integrating a NEMA-17 stepper motor and dual IMU sensors for closed-loop gait adaptation.</li>
+            </ul>
+            <div class="tag-list">
+              <span class="tag">SolidWorks CAD</span>
+              <span class="tag">ANSYS FEA</span>
+              <span class="tag">MATLAB</span>
+              <span class="tag">FDM 3D Printing</span>
+              <span class="tag">Arduino</span>
+            </div>
+          </div>
+        </article>
+
+        <div class="project-divider"></div>
+
+        <!-- Mars Rover: ends Dec 2023 -->
+        <article class="project-card" data-category="extracurricular">
+          <div class="project-media project-media--contain">
+            <div class="carousel-slide">
+              <img src="assets/Mars Rover Wheel/Moon Rover Wheel ISO.jpg" alt="Mars Rover Wheel ISO" />
+            </div>
+            <div class="carousel-slide">
+              <img src="assets/Mars Rover Wheel/rover wheel side.jpg" alt="Mars Rover Wheel Side" />
+            </div>
+            <div class="carousel-slide">
+              <img src="assets/Mars Rover Wheel/Displacement Simulation SS.jpg" alt="Displacement Simulation" />
+            </div>
+          </div>
+          <div class="project-info">
+            <p class="project-date">Oct 2023 – Dec 2023</p>
+            <div class="project-header-row">
+              <div class="project-org-logo" title="GIK Institute">
+                <img src="assets/giki logo.png" alt="GIK Institute" />
+              </div>
+              <h3 class="project-title">Mars Rover Wheel — Design, Analysis, Prototyping, and Validation</h3>
+            </div>
+            <ul class="project-bullets">
+              <li>Designed a suspension-based wheel module for a space rover as part of a national prototyping competition, achieving 3<sup>rd</sup> place.</li>
+              <li>Modelled the wheel in SolidWorks to competition constraints: 6-inch diameter, 2-inch width, 3 to 6 spokes, and a central hub for load application, with spoke geometry optimised to provide 1 to 5 mm z-direction deflection under load.</li>
+              <li>Performed static structural FEA under an 80 N load to validate load-bearing capacity and confirm deflection within specification, iterating the design across multiple cycles to minimise mass.</li>
+              <li>3D printed the final prototype in PLA via FDM, achieving a wheel mass of 163 g.</li>
+            </ul>
+            <div class="tag-list">
+              <span class="tag">SolidWorks CAD</span>
+              <span class="tag">SolidWorks Simulation</span>
+              <span class="tag">FEA</span>
+              <span class="tag">FDM 3D Printing</span>
+            </div>
+          </div>
+        </article>
+
+        <div class="project-divider"></div>
+
+        <!-- Quadcopter: ends Jun 2023 -->
+        <article class="project-card" data-category="extracurricular">
+          <div class="project-media">
+            <div class="carousel-slide" style="background:#ffffff;">
+              <img src="assets/Quadcopter UAV/Spectre - SUAS2024.jpg" alt="Spectre – SUAS 2024" />
+            </div>
+            <div class="carousel-slide">
+              <img src="assets/Quadcopter UAV/IMG-20250608-WA0020.jpg" alt="Quadcopter UAV Detail" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center bottom;" />
+            </div>
+            <div class="carousel-slide">
+              <img src="assets/Quadcopter UAV/53833207481_a9ed53fdfc_o.jpg" alt="Quadcopter UAV" />
+            </div>
+          </div>
+          <div class="project-info">
+            <p class="project-date">Sep 2022 – Jun 2023</p>
+            <div class="project-header-row">
+              <div class="project-org-logo" title="Team Foxtrot">
+                <img src="assets/fox.jpg" alt="Team Foxtrot" />
+              </div>
+              <h3 class="project-title">End-to-end Design and Analysis of a Quadcopter UAV</h3>
+            </div>
+            <ul class="project-bullets">
+              <li>Designed and built an H-frame quadcopter as part of a group project, managing a team of 15 over 6 months from concept to competition-ready prototype.</li>
+              <li>Focused on a lean design to maximise payload capacity.</li>
+              <li>Selected carbon fibre tubes and biodegradable FDM-printed components based on stiffness-to-weight requirements, achieving a 15 kg MTOM with a 40-minute flight time at a top speed of 15 m/s.</li>
+              <li>Validated structural integrity through FEA and produced full manufacturing drawings for fabrication.</li>
+              <li>Competed at the 2024 RoboNation SUAS Competition (USA), achieving 4th place in mission ranking among 70+ international teams.</li>
+            </ul>
+            <div class="tag-list">
+              <span class="tag">SolidWorks CAD</span>
+              <span class="tag">ANSYS Fluent</span>
+              <span class="tag">FEA</span>
+            </div>
+          </div>
+        </article>
+
+      </section>
+
+    </div><!-- /canvas -->
+
+      <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-name-block">
+        <span class="footer-name">Ahmad Adil</span>
+        <span class="footer-copy">© 2026 Ahmad Adil. All rights reserved.</span>
+      </div>
+      <a href="#top" class="back-to-top-btn" aria-label="Back to top">&#8593; Back to Top</a>
+      <div class="footer-icons">
+        <a href="https://linkedin.com/in/theahmadadil" target="_blank" rel="noopener noreferrer" class="footer-icon-btn" aria-label="LinkedIn">
+          <svg width="34" height="34" viewBox="0 0 24 24"><rect width="24" height="24" rx="4" fill="#0A66C2"/><path fill="#fff" d="M7.5 9h3v10h-3zM9 7.5A1.75 1.75 0 1 0 9 4a1.75 1.75 0 0 0 0 3.5zM13.5 9h2.87v1.37h.04c.4-.76 1.38-1.56 2.84-1.56 3.04 0 3.6 2 3.6 4.6V19h-3v-4.83c0-1.15-.02-2.63-1.6-2.63-1.61 0-1.85 1.26-1.85 2.55V19h-3z"/></svg>
+        </a>
+      </div>
+    </footer>
+  </div><!-- /page-wrapper -->
+  <script src="carousel.js"></script>
+  <script src="scroll-animations.js"></script>
+  <script src="filter.js"></script>
+  <script src="bg-network.js"></script>
+  <script src="page-transitions.js"></script>
+</body>
+</html>

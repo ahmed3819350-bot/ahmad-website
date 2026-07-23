@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; script-src 'self'; connect-src 'self' https://formspree.io; frame-ancestors 'none'; base-uri 'self'; form-action 'none';" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+  <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+  <title>Contact — Ahmad Adil</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page-wrapper" id="top">
+
+    <!-- HEADER -->
+    <header class="site-header">
+      <a href="index.html" class="site-header-logo">Ahmad Adil</a>
+      <nav class="nav-inner">
+        <a href="summary.html" class="nav-link">Summary</a>
+        <div class="nav-divider"></div>
+        <a href="projects.html" class="nav-link">Projects</a>
+        <div class="nav-divider"></div>
+        <a href="honours.html" class="nav-link">Honours &amp; Awards</a>
+        <div class="nav-divider"></div>
+        <a href="volunteering.html" class="nav-link">Volunteering</a>
+        <div class="nav-divider"></div>
+        <a href="contact.html" class="nav-link nav-link--active">Contact</a>
+        <div class="nav-divider"></div>
+        <a href="https://grabcad.com/ahmad.adil-2" target="_blank" rel="noopener noreferrer" class="nav-link nav-link--cta">3D CAD Portfolio</a>
+      </nav>
+    </header>
+
+    <div class="canvas">
+
+      <!-- PAGE HEADER -->
+      <section class="page-header">
+        <img class="page-header-map-bg" src="assets/LDNmap.png" alt="" aria-hidden="true" />
+        <h1 class="heading-hero">Contact</h1>
+        <p class="hero-sub" style="text-align:left;">
+          Get in touch — I'd love to hear from you!
+        </p>
+      </section>
+
+      <div class="section-divider"></div>
+
+      <!-- CONTACT FORM -->
+      <section class="section section--full">
+        <div class="section-body">
+          <div class="contact-split">
+
+            <div class="contact-split-form">
+              <form class="contact-form" id="contact-form">
+
+                <div class="contact-form-row">
+                  <div class="contact-field">
+                    <label for="contact-first-name">First Name</label>
+                    <input type="text" id="contact-first-name" name="first_name" required />
+                  </div>
+                  <div class="contact-field">
+                    <label for="contact-last-name">Last Name</label>
+                    <input type="text" id="contact-last-name" name="last_name" required />
+                  </div>
+                </div>
+
+                <div class="contact-field">
+                  <label for="contact-email">Email</label>
+                  <input type="email" id="contact-email" name="email" required />
+                </div>
+
+                <div class="contact-field">
+                  <label for="contact-role">Role</label>
+                  <select id="contact-role" name="role" required>
+                    <option value="" disabled selected>Select an option</option>
+                    <option value="Student">Student</option>
+                    <option value="Recruiter">Recruiter</option>
+                    <option value="Company Representative">Company Representative</option>
+                    <option value="Volunteer">Volunteer</option>
+                    <option value="Other">Other</option>
+                  </select>
+                </div>
+
+                <div class="contact-field" id="contact-role-other-field" style="display:none;">
+                  <label for="contact-role-other">Please specify</label>
+                  <input type="text" id="contact-role-other" name="role_other" maxlength="50" />
+                </div>
+
+                <div class="contact-field">
+                  <label for="contact-message">Message</label>
+                  <textarea id="contact-message" name="message" required></textarea>
+                </div>
+
+                <button type="submit" class="contact-submit-btn">Submit</button>
+
+                <p class="contact-success" id="contact-success" hidden>
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" fill="#22C55E"/><path d="M6 10.2L8.6 12.8L14 7" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  Message sent!
+                </p>
+
+                <p class="contact-error" id="contact-error" hidden>
+                  Something went wrong — please try again or email me directly.
+                </p>
+
+              </form>
+            </div>
+
+            <div class="contact-split-divider">
+              <span class="contact-split-or">OR...</span>
+            </div>
+
+            <div class="contact-split-linkedin">
+              <img src="assets/linkedin_qr.png" alt="QR code to Ahmad Adil's LinkedIn profile" class="contact-qr" />
+              <a href="https://linkedin.com/in/theahmadadil" target="_blank" rel="noopener noreferrer" class="contact-linkedin-btn" aria-label="Connect on LinkedIn">
+                <svg width="56" height="56" viewBox="0 0 24 24"><rect width="24" height="24" rx="4" fill="#0A66C2"/><path fill="#fff" d="M7.5 9h3v10h-3zM9 7.5A1.75 1.75 0 1 0 9 4a1.75 1.75 0 0 0 0 3.5zM13.5 9h2.87v1.37h.04c.4-.76 1.38-1.56 2.84-1.56 3.04 0 3.6 2 3.6 4.6V19h-3v-4.83c0-1.15-.02-2.63-1.6-2.63-1.61 0-1.85 1.26-1.85 2.55V19h-3z"/></svg>
+              </a>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+    </div><!-- /canvas -->
+
+      <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-name-block">
+        <span class="footer-name">Ahmad Adil</span>
+        <span class="footer-copy">© 2026 Ahmad Adil. All rights reserved.</span>
+      </div>
+      <a href="#top" class="back-to-top-btn" aria-label="Back to top">&#8593; Back to Top</a>
+      <div class="footer-icons"></div>
+    </footer>
+  </div><!-- /page-wrapper -->
+  <script src="scroll-animations.js"></script>
+  <script src="bold-numbers.js"></script>
+  <script src="bg-network.js"></script>
+  <script src="page-transitions.js"></script>
+  <script src="contact.js"></script>
+</body>
+</html>
