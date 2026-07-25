@@ -891,6 +891,41 @@ img {
   letter-spacing: 0.06em;
 }
 
+.timeline-detail-group {
+  margin-top: 12px;
+}
+
+.timeline-detail-group:first-child {
+  margin-top: 0;
+}
+
+.timeline-detail-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 4px 24px;
+  padding: 0;
+  margin: 6px 0 0;
+}
+
+.timeline-detail-list li {
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #4D535F;
+  padding-left: 14px;
+  position: relative;
+}
+
+.timeline-detail-list li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #1C2024;
+  font-size: 14px;
+}
+
 .timeline-bullets {
   list-style: none;
   display: flex;
