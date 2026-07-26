@@ -2437,8 +2437,7 @@ article.project-card.is-even .project-info {
   height: 84px;
   border-radius: 18px;
   overflow: hidden;
-  box-shadow: 0 6px 20px rgba(0, 0, 45, 0.18);
-  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  transition: transform 0.15s ease;
 }
 
 .contact-linkedin-btn svg {
@@ -2448,7 +2447,6 @@ article.project-card.is-even .project-info {
 
 .contact-linkedin-btn:hover {
   transform: translateY(-3px);
-  box-shadow: 0 10px 26px rgba(0, 0, 45, 0.22);
 }
 
 @media (max-width: 800px) {
