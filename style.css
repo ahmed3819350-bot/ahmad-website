@@ -2401,6 +2401,7 @@ article.project-card.is-even .project-info {
 @media (max-width: 800px) {
   .contact-split {
     grid-template-columns: 1fr;
+    padding-left: 0;
   }
 
   .contact-split-form,
@@ -2409,8 +2410,21 @@ article.project-card.is-even .project-info {
     justify-self: center;
   }
 
+  .contact-split-form {
+    margin-right: 0;
+  }
+
+  .contact-split-linkedin {
+    margin-left: 0;
+    margin-top: 0;
+  }
+
   .contact-split-divider {
     padding: 8px 0;
+  }
+
+  .contact-split-or {
+    margin-left: 0;
   }
 }
 
