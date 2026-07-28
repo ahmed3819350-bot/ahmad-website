@@ -317,6 +317,14 @@ img {
   mask-image: linear-gradient(to right, transparent 0%, black 35%);
 }
 
+.hero > .hero-art--left {
+  right: auto;
+  left: 0;
+  transform: scaleX(-1);
+  -webkit-mask-image: linear-gradient(to left, transparent 0%, black 35%);
+  mask-image: linear-gradient(to left, transparent 0%, black 35%);
+}
+
 @keyframes heroGearSpin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
@@ -351,6 +359,10 @@ img {
 .hero .mono-small,
 .hero .heading-muted {
   color: #ffffff;
+}
+
+.hero .hero-sub {
+  margin-top: 12px;
 }
 
 .hero-content {
