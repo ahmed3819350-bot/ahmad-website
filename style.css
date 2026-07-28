@@ -362,49 +362,13 @@ img {
   min-width: 0;
 }
 
-.hero-content--split {
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 100px;
-  width: 100%;
-  min-width: 0;
-}
-
-.hero-photo-full {
-  flex-shrink: 0;
-  height: 410px;
-  overflow: hidden;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-}
-
-.hero-photo-full img {
-  height: 918px;
-  width: auto;
-  max-width: none;
-  object-fit: cover;
-  display: block;
-  margin-left: -18px;
-  filter: saturate(0.82);
-}
-
 .hero-text {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  align-items: flex-start;
+  align-items: center;
   min-width: 0;
   flex: 0 1 auto;
-}
-
-.hero-heading-left {
-  text-align: left;
-}
-
-.hero-sub-left {
-  text-align: left;
 }
 
 .avatar-wrap {
@@ -2278,21 +2242,6 @@ article.project-card.is-even .project-info {
 }
 
 @media (max-width: 700px) {
-  .hero-content--split {
-    flex-direction: column;
-    align-items: center;
-    gap: 28px;
-  }
-
-  .hero-heading-left,
-  .hero-sub-left {
-    text-align: center;
-  }
-
-  .hero-text {
-    align-items: center;
-  }
-
   .avatar-wrap--large {
     width: 200px;
     height: 200px;
