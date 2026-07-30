@@ -860,7 +860,7 @@ img {
 }
 
 .timeline-details {
-  margin-top: 8px;
+  margin-top: 20px;
   padding-left: 68px;
 }
 
@@ -1532,7 +1532,7 @@ img {
   display: inline-flex;
   align-items: center;
   gap: 5px;
-  margin-top: 10px;
+  margin-top: 20px;
   padding: 3px 0;
   font-family: 'Roboto', system-ui, sans-serif;
   font-size: 11px;
