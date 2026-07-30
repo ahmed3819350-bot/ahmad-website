@@ -1777,6 +1777,16 @@ article.project-card.is-even .project-info {
   opacity: 1;
 }
 
+.vol-cat-icon--education {
+  color: #3B82F6;
+  opacity: 1;
+}
+
+.vol-cat-icon--scitech {
+  color: #A855F7;
+  opacity: 1;
+}
+
 .vol-category {
   display: inline-flex;
   align-items: center;
