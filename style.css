@@ -1762,6 +1762,21 @@ article.project-card.is-even .project-info {
   opacity: 0.85;
 }
 
+.vol-cat-icon--community {
+  color: #F5C518;
+  opacity: 1;
+}
+
+.vol-cat-icon--environment {
+  color: #22C55E;
+  opacity: 1;
+}
+
+.vol-cat-icon--health {
+  color: #EF4444;
+  opacity: 1;
+}
+
 .vol-category {
   display: inline-flex;
   align-items: center;
