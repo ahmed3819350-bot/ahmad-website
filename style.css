@@ -1107,6 +1107,54 @@ img {
   display: flex;
   flex-direction: column;
   gap: 32px;
+  position: relative;
+}
+
+.award-tile-grid::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: rgba(0, 0, 45, 0.1);
+  pointer-events: none;
+}
+
+.award-row {
+  position: relative;
+  width: 100%;
+}
+
+.award-node {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(0, 0, 45, 0.3);
+  border: 2px solid #ffffff;
+}
+
+.award-node::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 28px;
+  height: 1px;
+  background: rgba(0, 0, 45, 0.1);
+  transform: translateY(-50%);
+}
+
+.award-node--left::after {
+  right: 100%;
+}
+
+.award-node--right::after {
+  left: 100%;
 }
 
 .award-rung {
@@ -2235,6 +2283,11 @@ article.project-card.is-even .project-info {
   .timeline-item::after,
   .timeline-item:nth-child(odd)::after,
   .timeline-item:nth-child(even)::after {
+    display: none;
+  }
+
+  .award-tile-grid::before,
+  .award-node {
     display: none;
   }
 
