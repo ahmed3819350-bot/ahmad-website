@@ -13,9 +13,25 @@
   var successMsg = document.getElementById('contact-success');
   var errorMsg = document.getElementById('contact-error');
 
-  var submitBtnDefaultText = submitBtn.textContent;
+  var submitBtnLabel = submitBtn.querySelector('.contact-submit-btn-label');
+  var submitBtnDefaultText = submitBtnLabel.textContent;
   var cooldownTimer = null;
   var isCoolingDown = false;
+  var LABEL_SWAP_MS = 150;
+
+  // animate: true crossfades via blur (state changes); false updates instantly
+  // (used for the once-a-second countdown tick, where a crossfade would just flicker)
+  function setLabel(text, animate) {
+    if (animate === false) {
+      submitBtnLabel.textContent = text;
+      return;
+    }
+    submitBtnLabel.classList.add('is-swapping');
+    setTimeout(function () {
+      submitBtnLabel.textContent = text;
+      submitBtnLabel.classList.remove('is-swapping');
+    }, LABEL_SWAP_MS);
+  }
 
   roleOtherField.style.overflow = 'hidden';
   roleOtherField.style.maxHeight = '0px';
@@ -39,7 +55,7 @@
     var remaining = COOLDOWN_SECONDS;
     isCoolingDown = true;
     submitBtn.classList.add('is-cooldown');
-    submitBtn.textContent = 'Wait ' + remaining + 's';
+    setLabel('Wait ' + remaining + 's');
 
     cooldownTimer = setInterval(function () {
       remaining -= 1;
@@ -47,9 +63,9 @@
         clearInterval(cooldownTimer);
         isCoolingDown = false;
         submitBtn.classList.remove('is-cooldown');
-        submitBtn.textContent = submitBtnDefaultText;
+        setLabel(submitBtnDefaultText);
       } else {
-        submitBtn.textContent = 'Wait ' + remaining + 's';
+        setLabel('Wait ' + remaining + 's', false);
       }
     }, 1000);
   }
@@ -79,7 +95,7 @@
     var subject = firstName + ' ' + lastName + ' - ' + role + ' - Portfolio Website';
 
     submitBtn.disabled = true;
-    submitBtn.textContent = 'Sending…';
+    setLabel('Sending…');
 
     var payload = new FormData();
     payload.append('first_name', firstName);
@@ -109,7 +125,6 @@
       })
       .finally(function () {
         submitBtn.disabled = false;
-        submitBtn.textContent = submitBtnDefaultText;
         startCooldown();
       });
   });

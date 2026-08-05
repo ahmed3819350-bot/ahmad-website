@@ -2645,6 +2645,16 @@ article.project-card.is-even .project-info {
   box-shadow: none;
 }
 
+.contact-submit-btn-label {
+  display: inline-block;
+  transition: opacity 150ms ease, filter 150ms ease;
+}
+
+.contact-submit-btn-label.is-swapping {
+  opacity: 0;
+  filter: blur(2px);
+}
+
 .contact-submit-btn:disabled,
 .contact-submit-btn.is-cooldown {
   opacity: 0.5;
