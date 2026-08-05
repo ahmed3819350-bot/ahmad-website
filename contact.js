@@ -17,11 +17,22 @@
   var cooldownTimer = null;
   var isCoolingDown = false;
 
+  roleOtherField.style.overflow = 'hidden';
+  roleOtherField.style.maxHeight = '0px';
+  roleOtherField.style.opacity = '0';
+  roleOtherField.style.transition = 'max-height 0.35s cubic-bezier(0.23, 1, 0.32, 1), opacity 0.2s ease';
+
   roleSelect.addEventListener('change', function () {
     var isOther = roleSelect.value === 'Other';
-    roleOtherField.style.display = isOther ? '' : 'none';
+    if (isOther) {
+      roleOtherField.style.maxHeight = roleOtherField.scrollHeight + 'px';
+      roleOtherField.style.opacity = '1';
+    } else {
+      roleOtherField.style.maxHeight = '0px';
+      roleOtherField.style.opacity = '0';
+      roleOtherInput.value = '';
+    }
     roleOtherInput.required = isOther;
-    if (!isOther) roleOtherInput.value = '';
   });
 
   function startCooldown() {
@@ -86,7 +97,8 @@
       .then(function (response) {
         if (response.ok) {
           form.reset();
-          roleOtherField.style.display = 'none';
+          roleOtherField.style.maxHeight = '0px';
+          roleOtherField.style.opacity = '0';
           successMsg.hidden = false;
         } else {
           errorMsg.hidden = false;
