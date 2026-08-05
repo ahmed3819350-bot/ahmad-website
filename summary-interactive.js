@@ -11,7 +11,7 @@
     expandables.forEach(function (el) {
       el.style.maxHeight = '0';
       el.style.overflow = 'hidden';
-      el.style.transition = 'max-height 0.35s ease, opacity 0.2s ease';
+      el.style.transition = 'max-height 0.35s cubic-bezier(0.23, 1, 0.32, 1), opacity 0.2s ease';
       el.style.opacity = '0';
     });
 

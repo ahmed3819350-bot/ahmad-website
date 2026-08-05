@@ -215,7 +215,11 @@ img {
   letter-spacing: 0.06em;
   position: relative;
   overflow: hidden;
-  transition: background 0.15s ease, opacity 0.15s ease;
+  transition: background 0.15s ease, opacity 0.15s ease, transform 0.12s ease-out;
+}
+
+.nav-link--cta:active {
+  transform: scale(0.96);
 }
 
 .nav-link--cta::after {
@@ -1386,11 +1390,15 @@ img {
   font-family: 'Roboto', system-ui, sans-serif;
   font-weight: 500;
   font-size: 14px;
-  transition: opacity 0.15s ease;
+  transition: opacity 0.15s ease, transform 0.12s ease-out;
 }
 
 .btn-primary:hover {
   opacity: 0.85;
+}
+
+.btn-primary:active {
+  transform: scale(0.97);
 }
 
 .btn-secondary {
@@ -1405,11 +1413,15 @@ img {
   font-family: 'Roboto', system-ui, sans-serif;
   font-weight: 500;
   font-size: 14px;
-  transition: background 0.15s ease;
+  transition: background 0.15s ease, transform 0.12s ease-out;
 }
 
 .btn-secondary:hover {
   background: rgba(0, 0, 45, 0.04);
+}
+
+.btn-secondary:active {
+  transform: scale(0.97);
 }
 
 .social-row {
@@ -1425,11 +1437,15 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: background 0.15s ease;
+  transition: background 0.15s ease, transform 0.12s ease-out;
 }
 
 .social-btn:hover {
   background: rgba(0, 0, 45, 0.04);
+}
+
+.social-btn:active {
+  transform: scale(0.93);
 }
 
 /* ============================================================
@@ -1873,12 +1889,16 @@ article.project-card.is-even .project-info {
   letter-spacing: 0.06em;
   color: rgba(0, 0, 45, 0.45);
   cursor: pointer;
-  transition: background 0.15s ease, color 0.15s ease;
+  transition: background 0.15s ease, color 0.15s ease, transform 0.12s ease-out;
 }
 
 .filter-btn:hover {
   background: rgba(0, 0, 45, 0.06);
   color: rgba(0, 0, 45, 0.75);
+}
+
+.filter-btn:active {
+  transform: scale(0.95);
 }
 
 .filter-btn--active {
@@ -1888,6 +1908,10 @@ article.project-card.is-even .project-info {
 
 .project-card.hidden {
   display: none;
+}
+
+.project-card.filtering-out {
+  pointer-events: none;
 }
 
 .project-divider.hidden {
@@ -1986,7 +2010,7 @@ article.project-card.is-even .project-info {
   justify-content: center;
   color: #1C2024;
   opacity: 0;
-  transition: opacity 0.2s ease, background 0.15s ease;
+  transition: opacity 0.2s ease, background 0.15s ease, transform 0.12s ease-out;
   z-index: 3;
   box-shadow: 0 1px 6px rgba(0,0,0,0.12);
 }
@@ -1997,6 +2021,10 @@ article.project-card.is-even .project-info {
 
 .carousel-btn:hover {
   background: #ffffff;
+}
+
+.carousel-btn:active:not(:disabled) {
+  transform: translateY(-50%) scale(0.9);
 }
 
 .carousel-btn:disabled {
@@ -2171,8 +2199,8 @@ article.project-card.is-even .project-info {
   opacity: 0;
   transform: translateY(28px);
   transition:
-    opacity 0.75s cubic-bezier(0.22, 0.61, 0.36, 1),
-    transform 0.75s cubic-bezier(0.22, 0.61, 0.36, 1);
+    opacity 0.55s cubic-bezier(0.22, 0.61, 0.36, 1),
+    transform 0.55s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
 
 .scroll-reveal.visible {
@@ -2613,7 +2641,7 @@ article.project-card.is-even .project-info {
 }
 
 .contact-submit-btn:active {
-  transform: translateY(0);
+  transform: translateY(0) scale(0.97);
   box-shadow: none;
 }
 
