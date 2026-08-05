@@ -112,7 +112,9 @@ img {
   left: 0;
   right: 0;
   z-index: 100;
-  background: #1C2024;
+  background: rgba(28, 32, 36, 0.75);
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
   border-radius: 0;
   border: none;
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
@@ -125,6 +127,14 @@ img {
   padding: 0 36px;
   height: 68px;
   overflow: hidden;
+}
+
+@media (prefers-reduced-transparency: reduce) {
+  .site-header {
+    background: #1C2024;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+  }
 }
 
 .site-header::before {
