@@ -1370,6 +1370,33 @@ img {
   line-height: 1.65;
 }
 
+.faq-answer ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 0;
+  margin: 0;
+}
+
+.faq-answer li {
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 15px;
+  line-height: 1.55;
+  color: #4D535F;
+  padding-left: 16px;
+  position: relative;
+}
+
+.faq-answer li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: #1C2024;
+  font-size: 15px;
+  top: 0;
+}
+
 /* ============================================================
    CTA SECTION
    ============================================================ */
