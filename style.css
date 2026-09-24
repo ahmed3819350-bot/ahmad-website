@@ -706,9 +706,10 @@ img {
 }
 
 .highlight-portrait-col {
-  flex: 0 0 220px;
+  flex: 0 0 340px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 12px;
 }
 
