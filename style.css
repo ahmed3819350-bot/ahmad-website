@@ -705,6 +705,10 @@ img {
   pointer-events: none;
 }
 
+.highlight-card-img--contain img {
+  object-fit: contain;
+}
+
 .highlight-card-caption {
   padding: 10px 12px;
   font-family: 'Roboto', system-ui, sans-serif;
