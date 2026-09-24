@@ -259,6 +259,32 @@ img {
   flex-shrink: 0;
 }
 
+.nav-linkedin-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  margin-left: 10px;
+  border-radius: 6px;
+  flex-shrink: 0;
+  transition: opacity 0.15s ease, transform 0.14s ease-out;
+}
+
+.nav-linkedin-btn svg {
+  width: 26px;
+  height: 26px;
+  display: block;
+}
+
+.nav-linkedin-btn:hover {
+  opacity: 0.85;
+}
+
+.nav-linkedin-btn:active {
+  transform: scale(0.92);
+}
+
 /* ============================================================
    TYPOGRAPHY
    ============================================================ */
@@ -670,13 +696,33 @@ img {
    HIGHLIGHTS GRID
    ============================================================ */
 .highlights-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  align-items: stretch;
   gap: 12px;
   background: transparent;
   border: none;
   border-radius: 0;
   overflow: visible;
+}
+
+.highlight-portrait-col {
+  flex: 0 0 220px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.highlight-portrait-col .highlight-card {
+  flex: none;
+}
+
+.highlight-landscape-grid {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: auto;
+  gap: 12px;
+  align-content: start;
 }
 
 .highlight-card {
@@ -695,6 +741,14 @@ img {
   background: #F4F4F6;
   overflow: hidden;
   flex-shrink: 0;
+}
+
+.highlight-card-img--portrait {
+  aspect-ratio: 3 / 4;
+}
+
+.highlight-card-img--portrait img {
+  object-fit: contain;
 }
 
 .highlight-card-img img {
@@ -2429,7 +2483,17 @@ article.project-card.is-even .project-info {
   }
 
   .highlights-grid {
-    grid-template-columns: 1fr;
+    flex-direction: column;
+  }
+
+  .highlight-portrait-col {
+    flex: none;
+    flex-direction: row;
+  }
+
+  .highlight-card-img--portrait {
+    aspect-ratio: 3 / 4;
+    height: auto;
   }
 }
 
